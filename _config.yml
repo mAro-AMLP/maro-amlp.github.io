@@ -14,9 +14,9 @@ timezone: America/Toronto
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Spotrot # the main title
+title: maro-amlp # the main title
 
-tagline: Turning the spotlight on what matters # it will display as the subtitle
+tagline: testbed # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Stories | Novels | Opinions
