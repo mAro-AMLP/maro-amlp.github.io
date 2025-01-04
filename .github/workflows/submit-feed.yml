@@ -1,0 +1,28 @@
+name: Process Feed Submissions
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update blog_sources.yml
+        if: contains(github.event.issue.title, 'http')
+        run: |
+          FEED_URL=${{ github.event.issue.title }}
+          echo "Adding feed: $FEED_URL"
+          echo "- rss: $FEED_URL" >> _data/blog_sources.yml
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add _data/blog_sources.yml
+          git commit -m "Add feed: ${{ github.event.issue.title }}"
+          git push
