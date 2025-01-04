@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 icon: fas fa-info-circle
-order: 4
+order: 3
 ---
 
 Hi! I'm Kiran, a software developer with a passion for storytelling. I love creating worlds and characters and getting lost in the magic of writing. When I'm not coding away, you can usually find me with my nose in a book, trying to decipher the secrets of the universe (or just figuring out how to write a really good fight scene).
