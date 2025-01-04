@@ -1,0 +1,40 @@
+---
+layout: tag
+title: Tutorial
+permalink: /tags/tutorial/
+count: 33
+---
+
+- [Cara Mudah Membuat Repo Private dan Tetap Terhubung ke Repo Asli di GitHub](https://se7uh.github.io/blog/posts/private-repo-with-upstream/)
+- [Cara mengubah Keymap di linux](https://se7uh.github.io/blog/posts/cara-mengubah-keymap-di-linux/)
+- [Cara Install npm sebagai user di linux](https://se7uh.github.io/blog/posts/cara-memasang-npm-sebagai-user/)
+- [Cara menjalankan ydotool sebagai user](https://se7uh.github.io/blog/posts/cara-menjalankan-ydotool-sebagai-user/)
+- [Cara Memasang Font secara manual di Linux](https://se7uh.github.io/blog/posts/cara-memasang-font-secara-manual-di-linux/)
+- [Integrating a UPS in our server](https://www.danielmartingonzalez.com/en/integrating-ups-server/)
+- [Integrating a UPS in our server](https://www.danielmartingonzalez.com/en/integrating-ups-server/)
+- [Integrando un SAI en nuestro servidor](https://www.danielmartingonzalez.com/es/integrando-sai-servidor/)
+- [Integrando un SAI en nuestro servidor](https://www.danielmartingonzalez.com/es/integrando-sai-servidor/)
+- [Webmin: Managing a server from the browser](https://www.danielmartingonzalez.com/en/webmin-managing-server-from-browser/)
+- [Webmin: Managing a server from the browser](https://www.danielmartingonzalez.com/en/webmin-managing-server-from-browser/)
+- [Webmin: Administrando un servidor desde el navegador](https://www.danielmartingonzalez.com/es/webmin-administrando-un-servidor-desde-navegador/)
+- [Webmin: Administrando un servidor desde el navegador](https://www.danielmartingonzalez.com/es/webmin-administrando-un-servidor-desde-navegador/)
+- [Your files from Windows, installing a Samba Server on Debian](https://www.danielmartingonzalez.com/en/samba-server-in-debian/)
+- [Your files from Windows, installing a Samba Server on Debian](https://www.danielmartingonzalez.com/en/samba-server-in-debian/)
+- [Tus archivos desde Windows, instalando un Servidor Samba en Debian](https://www.danielmartingonzalez.com/es/servidor-samba-en-debian/)
+- [Tus archivos desde Windows, instalando un Servidor Samba en Debian](https://www.danielmartingonzalez.com/es/servidor-samba-en-debian/)
+- [Accessibility Guidelines for Android Apps](https://vladleesi.dev/post/2023/07/23/accessibility-guidelines-for-android-apps.html)
+- [Implementing PCA from Scratch](https://kozodoi.me/blog/20230326/pca-from-scratch)
+- [Implementing KNN from Scratch](https://kozodoi.me/blog/20230319/knn-from-scratch)
+- [Layer-Wise Learning Rate in PyTorch](https://kozodoi.me/blog/20220329/discriminative-lr)
+- [Extracting Intermediate Layer Outputs in PyTorch](https://kozodoi.me/blog/20210527/extracting-features)
+- [Computing Mean &amp; STD in Image Dataset](https://kozodoi.me/blog/20210308/compute-image-stats)
+- [Creating a Blog with Jekyll and Publishing on GitHub Pages](/2024/06/20/creating-a-blog.html)
+- [Host your own blog with Jekyll and Github Pages](https://bitbrain.github.io/2021/10/03/host-your-own-blog-for-free-with-custom-domain.html)
+- [Angular - A minimalistic approach to runtime configurations in docker containers](https://calzone.proofofpizza.com/tech/tutorial/Angular-environment-variables-at-runtime/)
+- [Setup SOPS with AWS KMS and Terraform to encrypt your secrets in git](https://calzone.proofofpizza.com/tech/tutorial/using-sops-with-aws-and-terraform/)
+- [How to use keepass programmatically with typescript](https://calzone.proofofpizza.com/tech/tutorial/using-keepass-programatically-with-typescript/)
+- [Github Profiles](http://www.lukehackett.com/posts/github-profliles)
+- [Tutorial: Rails7, Tailwind e Hotwire - Parte 3](https://callmarx.github.io/blog/2022/06/29/tutorial-rails7-hotwire-parte-3.html)
+- [Tutorial: Rails7, Tailwind e Hotwire - Parte 2](https://callmarx.github.io/blog/2021/12/19/tutorial-rails7-hotwire-parte-2.html)
+- [Tutorial: Rails7, Tailwind e Hotwire - Parte 1](https://callmarx.github.io/blog/2021/12/09/tutorial-rails7-hotwire-parte-1.html)
+- [Tutorial: Rails7, Tailwind e Hotwire](https://callmarx.github.io/blog/2021/12/07/tutorial-rails7-hotwire.html)
