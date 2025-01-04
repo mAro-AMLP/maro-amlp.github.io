@@ -6,7 +6,8 @@ refactor: true
 <section id="posts">
   <h1>Latest Posts</h1>
   <ul>
-    {% for post in site.data.posts %}
+    {% assign sortedPosts = site.data.posts | sort: 'pubDate' | reverse %} 
+    {% for post in sortedPosts %}
     <li>
       <h3>
         <a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
