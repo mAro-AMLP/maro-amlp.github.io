@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Is Human Created Content an Illusion?",
+    "link": "https://deletethematrix.com/blog/2024/Is-human-created-content-meaningful",
+    "pubDate": "Sat, 03 Aug 2024 00:00:00 +0000",
+    "excerpt": "This story starts and ends with a thought",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Delete the Matrix"
+  },
+  {
+    "title": "The Hitch-Hikers Guide to PowerShell Default Parameters and Values",
+    "link": "https://deletethematrix.com/blog/2024/Hitch-Hikers-Guide-PowerShell-Default-Parameters-Values",
+    "pubDate": "Mon, 15 Jul 2024 00:00:00 +0000",
+    "excerpt": "Perhaps you dream of the everything script. It handles every exception perfectly, it runs at optimal speed, and its code complexity is maintainable. Well, I might to be the first to tell you that it’s nearly impossible. Either you will sacrifice on unoptimized code that only a beginner can read or with code that uses that latest or different features. I personally would advise just learning the language better, this post is not for the faint of heart. We will start with colour. The psychological effects cannot be underestimated. They are the mother tongue of the subconscious. They speak the language of gender, grades, and identity. What better way to enforce identity politics and division than to give your script style. Here’s a nice start:",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Delete the Matrix"
+  },
+  {
+    "title": "Deleting the Matrix: An Informal Introduction",
+    "link": "https://deletethematrix.com/blog/2024/deleting-the-matrix-informal-intro",
+    "pubDate": "Sun, 23 Jun 2024 00:00:00 +0000",
+    "excerpt": "Who, what, where and why?",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Delete the Matrix"
+  },
+  {
+    "title": "savechandra.org",
+    "link": "https://deletethematrix.com/blog/2024/savechandra",
+    "pubDate": "Sun, 05 May 2024 00:00:00 +0000",
+    "excerpt": "Chandra is a website that is advocating for the U.S. Congress to not cut funding to NASA’s Chandra X-ray Observatory. You can visit it itself, so I will keep this short and sweet:",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Delete the Matrix"
+  },
+  {
+    "title": "The Reverse Radium Craze: A Dark Story",
+    "link": "https://deletethematrix.com/blog/2024/reverse-radium-craze",
+    "pubDate": "Thu, 25 Apr 2024 00:00:00 +0000",
+    "excerpt": "Disease killed more solders than they killed each other in WWI",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Delete the Matrix"
+  },
+  {
+    "title": "The Not By AI Movement: A Review and Analysis",
+    "link": "https://deletethematrix.com/blog/2024/not-made-by-ai-review",
+    "pubDate": "Thu, 11 Apr 2024 00:00:00 +0000",
+    "excerpt": "I glaze over the landing page",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Delete the Matrix"
+  },
+  {
+    "title": "xkcd.com",
+    "link": "https://deletethematrix.com/blog/2024/xkcd",
+    "pubDate": "Sun, 07 Apr 2024 00:00:00 +0000",
+    "excerpt": "When I want to read some nerdy humor, I don’t have to go far. A small group of people maintain this, and it often features little stick figures saying witty things. It covers many areas of interest, like\nphysics, math, language quarks, and just overall nerdy humor. On April Fools day every year, they tend to make something interactive. Anyways, xkcd often fills niche interests that many people have, even though\nthey may not have the same hobbies or jobs.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Delete the Matrix"
+  },
+  {
+    "title": "데이트팝 프론트엔드 개발자 기술면접",
+    "link": "https://blog.datepop.co.krhttps://blog.datepop.co.kr/javascript-interview-2024-10/",
+    "pubDate": "Fri, 01 Nov 2024 00:00:00 +0000",
+    "excerpt": "데이트팝  주니어 개발자 기술면접\n\n이번 시간에는 React useState Hook을 직접 만들어가면서 Hook이 어떻게 동작하는지 확인해보는 시간을 가져보겠습니다.\n\nReact useState 흉내내기\n\nReact useState를 흉내내기 위해서 useState라는 함수를 직접 작성해보았습니다. 상태값 foo 와 상태값을 변경하는 setFoo 함수가 의도하는대로 동작하는지 설명해주세요. 그렇지 않다면 어떻게 코드를 수정하면 될지 제시해주세요.\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\nfunction useState(initialValue) {\n  var _value = initialValue;\n\n  function setState(newValue) {\n    _value = newValue;\n  }\n\n  return [_value, setState];\n}\n\nconst [foo, setFoo] = useState(0);\nconsole.log(foo); // 여기에서는 초기값인 0이 출력됩니다.\nsetFoo(1);\nconsole.log(foo); // 여기에서 상태값이 1로 변경이 될까요?\n\n\n본격적으로 React useState 뿌시기\n\n위에서 React useState 뼈대를 만들어보면서 공부해보았다면, 이번엔 실제 React 모듈을 만들어 React 내에서 useState가 어떻게 동작하는지 배워가보겠습니다.\n\nDatepopReact라는 즉시 실행함수를 만들어 보았습니다. useState와 render가 있어 DatepopComponent를 실행 시켜주고 render 함수를 실행시키게 됩니다.\n\nDatepopComponent에서는 DatepopReact의 useState를 이용하여 count와 text 상태값을 관리하도록 해보았습니다. click 함수와 type 함수를 실행 시킬 경우, 의도대로 상태값이 변경되는지 확인해보십다.\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\nconst DatepopReact = (function () {\n  let _value;\n\n  function useState(initialValue) {\n    let state = _value || initialValue;\n\n    const setState = function (newValue) {\n      _value = newValue;\n    };\n\n    return [state, setState];\n  }\n\n  function render(Component) {\n    const C = Component();\n    C.render();\n    return C;\n  }\n\n  return {useState, render};\n})();\n\nfunction DatepopComponent() {\n  const [count, setCount] = DatepopReact.useState(0);\n  const [text, setText] = DatepopReact.useState(\"popdeal\");\n\n  return {\n    render: function () {\n      console.log(\"render: \", {count, text});\n    },\n    click: function () {\n      setCount(count + 1);\n    },\n    type: function (value) {\n      setText(value);\n    },\n  };\n}\n\nlet App = DatepopReact.render(DatepopComponent);\n// 이 때, 출력으로 render: {count: 0, text: \"popdeal\"} 이 출력됩니다.\nApp.click();\nApp = DatepopReact.render(DatepopComponent);\n// 이 때, 출력값으로 무엇이 나올까요?\nApp.type(\"poppass\");\nApp = DatepopReact.render(DatepopComponent);\n// 이 때, 출력값으로 무엇이 나올까요?\n\n\nReact useState 제대로 만들어보기\n\n위의 문제에서 의도대로 상태값이 변경되지 않는다는 것을 알 수 있습니다. 이는 DatepopReact가 count와 text의 값을 독립적으로 관리하지 못하기 때문에 발생하는 문제입니다. 실제 React에서는 상태값을 컴포넌트 내에서 순서대로 관리합니다. 이를 위해 아래와 같이 코드를 수정하면 setState만 완성하면 됩니다. 이제 각 상태의 인덱스를 고정해 클로저 문제를 해결해보세요! 어떻게 완성시키면 될까요?\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\nconst DatepopReact = (function () {\n  let states = [];\n  let index = 0;\n\n  function useState(initialValue) {\n    let state = states[index] || initialValue;\n\n    const setState = function (newValue) {\n      // 코드가 동작할 수 있도록 코드를 작성해주세요!\n    };\n\n    return [state, setState];\n  }\n\n  index += 1;\n\n  function render(Component) {\n    index = 0;\n    const C = Component();\n    C.render();\n    return C;\n  }\n\n  return {useState, render};\n})();\n\nfunction DatepopComponent() {\n  const [count, setCount] = DatepopReact.useState(0);\n  const [text, setText] = DatepopReact.useState(\"popdeal\");\n\n  return {\n    render: function () {\n      console.log(\"render: \", {count, text});\n    },\n    click: function () {\n      setCount(count + 1);\n    },\n    type: function (value) {\n      setText(value);\n    },\n  };\n}\n\nlet App = DatepopReact.render(DatepopComponent);\n// 이 때, 출력으로 render: {count: 0, text: \"popdeal\"} 이 출력됩니다.\nApp.click();\nApp = DatepopReact.render(DatepopComponent);\n// 이 때, 예상 출력값은 render: {count: 1, text: \"popdeal\"}\nApp.type(\"poppass\");\nApp = DatepopReact.render(DatepopComponent);\n// 이 때, 예상 출력값은 render: {count: 1, text: \"poppass\"}\n\n\nReact useState 완성하기\n\n이제 위에서 React useState가 의도대로 동작하는 것을 알 수 있습니다. 하지만, 하나가 아쉽네요.\n\n1\n2\n3\n    click: function () {\n      setCount(count + 1);\n    },\n\n\nclick 함수를 보면 count 자기 자신을 하나 증가 시키는 구조로 되어 있는데 React에서는 상태값이 비동기로 변경되기 때문에 이전 상태값을 매개변수로 받아 변경하는 방식을 사용합니다.\n\n1\n2\n3\n    click: function (prev) {\n      setCount(prev + 1);\n    },\n\n\n이런 식으로 변경이 가능합니다. 이렇게 되면 useState 도 같이 변경해야합니다.\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\nconst DatepopReact = (function () {\n  let states = [];\n  let index = 0;\n\n  function useState(initialValue) {\n    let state = states[index] || initialValue;\n    const _index = index;\n\n    const setState = function (newValue) {\n      if (typeof newValue === \"function\") {\n        states[_index] = newValue(...); // 이전 상태값으로 인자를 어떻게 넣어주면 될까요?\n      } else {\n        states[_index] = newValue;\n      }\n    };\n\n    return [state, setState];\n  }\n\n  index += 1;\n\n  function render(Component) {\n    index = 0;\n    const C = Component();\n    C.render();\n    return C;\n  }\n\n  return {useState, render};\n})();\n\nfunction DatepopComponent() {\n  const [count, setCount] = DatepopReact.useState(0);\n  const [text, setText] = DatepopReact.useState(\"popdeal\");\n\n  return {\n    render: function () {\n      console.log(\"render: \", {count, text});\n    },\n    click: function () {\n      setCount(function (prev) {\n        return prev + 1;\n      });\n    },\n    type: function (value) {\n      setText(value);\n    },\n  };\n}\n\nlet App = DatepopReact.render(DatepopComponent);\n// 이 때, 출력으로 render: {count: 0, text: \"popdeal\"} 이 출력됩니다.\nApp.click();\nApp = DatepopReact.render(DatepopComponent);\n// 이 때, 예상 출력값은 render: {count: 1, text: \"popdeal\"}\nApp.type(\"poppass\");\nApp = DatepopReact.render(DatepopComponent);\n// 이 때, 예상 출력값은 render: {count: 1, text: \"poppass\"}",
+    "tags": [
+      "javascript",
+      "datepop"
+    ],
+    "author": "unknown-author",
+    "source": "데이트팝 기술블로그"
+  },
+  {
+    "title": "데이트팝 Python 주니어 개발자 인터뷰 후기 2탄",
+    "link": "https://blog.datepop.co.krhttps://blog.datepop.co.kr/python-interview-2024-2-copy/",
+    "pubDate": "Tue, 14 May 2024 00:00:00 +0000",
+    "excerpt": "데이트팝 Python 주니어 개발자 인터뷰 후기\n\n안녕하세요. 여러분에게 사랑을 전하는 데이트팝의 CTO, 권재원입니다.\n지난 Python 주니어 개발자 채용 이후 최근 데이트팝에서 Python 주니어 개발자 채용 과정을 또 다시 진행하면서 경험한 기술 인터뷰의 후기를 공유하고자 합니다. 이 글이 개발자 취업을 준비하는 주니어 분들께 실질적인 도움이 되기를 바랍니다.\n\n아래 인터뷰 질문은 데이트팝에서 채용을 위해 많은 고민을 하고 준비한 질문들입니다. 상업적 이용 이외에 학습을 위해 자유롭게 내용을 참고해주시고 공유해주시면 감사하겠습니다.\n\n인터뷰 질문\n\n이번 Python 채용에서는 파이썬 기초와 데이터베이스 이론에 대해 다루어보았습니다. 파이썬을 정말 사랑하고 차근차근 공부를 하였다면 무리 없이 답변할 수 있는 질문들 위주로 준비하였습니다.\n\n파이썬의 Copy\n\n파이썬에서 자주 다루는 Shallow Copy와 Deep Copy에 대해 다뤄보았습니다.\n\n\n  아래 코드를 실행 시키면 출력이 어떻게 될까요? 그 이유도 같이 설명해주세요.\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\nd1 = {\"k\": [1, 2, 3]}\nd2 = d1\n\n# 아래 출력의 결과는 그리고 그 이유는?\nprint(id(d1), id(d2))\n\nd2[\"k\"].append(99)\nd3 = d1.copy()\n\n# 아래 출력의 결과는 그리고 그 이유는?\nprint(id(d3))\nprint(d1, d2, d3)\n\nimport copy\n\nd4 = copy.deepcopy(d1)\nd3[\"k\"].append(199)\n\n# 아래 출력의 결과는 그리고 그 이유는?\nprint(id(d4))\nprint(d1, d2, d3, d4)\n\n\n클래스 변수\n\n파이썬에는 클래스 변수와 인스턴스 변수 개념이 있습니다. 두 개념을 정확히 이해한다면 쉽게 대답할 수 있는 질문입니다.\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\nclass Datepop:\n  address = \"Guro\"\n  members = []\n  \ninstance1 = Datepop()\ninstance2 = Datepop()\n\ninstance2.address = \"Seocho\"\ninstance2.members.append(\"A\")\n\n# 아래 출력의 결과는 그리고 그 이유는 무엇인가요?\nprint(instance1.address, instance1.members)\n\n\n제너레이터\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nfrom sys import getsizeof\n\ngenerator_object = (i for i in range(10000000))\n\nmy_list = [i for i in range(10000000)]\n\n# 이터레이터와 제너레이터의 차이점은 무엇인가요?\n# 두 출력의 차이는 무엇인가요? 그리고 그 이유는 무엇인가요?\nprint(getsizeof(generator_object))\nprint(getsizeof(my_list))\n\n\n데이터베이스\n\n데이터베이스를 공부한다면 빼놓을 수 없는 트랜잭션 개념에 대한 질문입니다.\n\n\n  SOLID 원칙에 무엇인가요? SOLID 원칙은 왜 지켜야한다고 생각하실까요?\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\nfrom django.db import models\nfrom django.db.models import F\n\nclass Counter(models.Model):\n\t\tid = models.IntegerField(unique=True, primary_key=True)\n\t\tcount = models.IntegerField(default=0)\n\ndef increment(id):\n    counter = Counter.objects.get(id=id)\n    counter.count = counter.count + 1\n    counter.save()\n\n# Race Condition은 무엇인가요? 그리고 해결하기 위한 방법론으로 무엇이 있나요?\n# 위의 코드에서 잘못 된 점은? 그리고 해결 방법은?\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\nfrom django.db import transaction\n\ndef create():\n    with transaction.atomic():\n        user = User.objects.create(name=\"jaewon\", age=30)\n        set_name(user.id)\n        user.age = 31\n        user.save()\n \ndef set_name(id):\n    user = User.objects.get(id=id)\n    user.name = \"donghae\"\n    user.save()\n\n# 위의 코드에서 잘못 된 점은 무엇인가요? 그리고 해결 방법은 무엇인가요?\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\nfrom django.db import transaction\n\nclass UserService:\n    def transfer_money(self, from_user_id, to_user_id, amount):\n        with transaction.atomic():\n            from_user = User.objects.select_for_update().get(id=from_user_id)\n            to_user = User.objects.select_for_update().get(id=to_user_id)\n\n            if from_user.balance < amount:\n                raise InsufficientFundsError()\n\n            from_user.balance -= amount\n            from_user.save()\n\n            to_user.balance += amount\n            to_user.save()\n\n    def transfer_money_between_users(self, user1_id, user2_id, amount):\n        with transaction.atomic():\n            self.transfer_money(user1_id, user2_id, amount + 1000)\n\t          self.transfer_money(user2_id, user1_id, amount - 1000)\n\n# 데드락은 무엇인가요? 해결하기 위해서는 어떻게 하면 되나요?\n# 위의 코드에서 잘못된 점은 무엇인가요? 그리고 해결 방법은 무엇인가요?",
+    "tags": [
+      "python",
+      "datepop"
+    ],
+    "author": "unknown-author",
+    "source": "데이트팝 기술블로그"
+  },
+  {
+    "title": "데이트팝 iOS 주니어 개발자 인터뷰 후기",
+    "link": "https://blog.datepop.co.krhttps://blog.datepop.co.kr/ios-interview-2024-1/",
+    "pubDate": "Mon, 29 Apr 2024 00:00:00 +0000",
+    "excerpt": "데이트팝 iOS 주니어 개발자 인터뷰 후기\n\n안녕하세요. 여러분에게 사랑을 전하는 데이트팝의 CTO, 권재원입니다.\n최근 데이트팝에서 진행한 iOS 주니어 개발자 채용 과정을 진행하면서 경험한 기술 인터뷰의 후기를 공유하고자 합니다. 이 글이 iOS 개발자 취업을 준비하는 주니어 분들께 실질적인 도움이 되기를 바랍니다.\n\n아래 인터뷰 질문은 데이트팝에서 채용을 위해 많은 고민을 하고 준비한 질문들입니다. 상업적 이용 이외에 학습을 위해 자유롭게 내용을 참고해주시고 공유해주시면 감사하겠습니다.\n\niOS 개발자 채용 시 데이트팝이 바라는 개발자상\n\n데이트팝에서는 iOS와 Swift에 대한 열정과 함께 탄탄한 기본기를 갖춘 주니어 개발자를 찾고 있습니다. 인터뷰는 주로 필수적으로 학습해야 하는 내용에 초점을 맞춰 진행되었으며, 이론을 단순히 외운 것이 아닌 깊이 이해하고 있는지를 평가하였습니다.\n\n인터뷰 질문\n\nSwift의 Class와 Struct\n\nSwift의 핵심 개념인 Class와 Struct의 차이를 이해하고 있는지 확인하기 위해 관련 질문을 포함하였습니다 각 타입에 따라 어느 메모리에 저장하고 사용하는지 정확하게 이해하고 있다면 쉽게 대답할 수 있는 질문으로 구성하였습니다.\nValue 타입과 Reference 타입에 대한 정확한 이해가 필요합니다.\n\n\n  EmptyClass 클래스를 이용하여 HugeStruct와 HugeClass을 선언하고 두 함수를 만들어 실행 시킬 때 실행시간 차이는 어떻게 날까요?\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\nfinal class EmptyClass {}\n\nstruct HugeStruct {\n    var emptyClass = EmptyClass()\n    var emptyClass2 = EmptyClass()\n    var emptyClass3 = EmptyClass()\n    var emptyClass4 = EmptyClass()\n    var emptyClass5 = EmptyClass()\n    var emptyClass6 = EmptyClass()\n    var emptyClass7 = EmptyClass()\n    var emptyClass8 = EmptyClass()\n    var emptyClass9 = EmptyClass()\n    var emptyClass10 = EmptyClass()\n}\n\nclass HugeClass {\n    var emptyClass = EmptyClass()\n    var emptyClass2 = EmptyClass()\n    var emptyClass3 = EmptyClass()\n    var emptyClass4 = EmptyClass()\n    var emptyClass5 = EmptyClass()\n    var emptyClass6 = EmptyClass()\n    var emptyClass7 = EmptyClass()\n    var emptyClass8 = EmptyClass()\n    var emptyClass9 = EmptyClass()\n    var emptyClass10 = EmptyClass()\n}\n\nfunc createBunchOfReferencesOfClass() {\n    var array = [HugeClass]()\n    let object = HugeClass()\n    for _ in 0..<10000000000000 {\n        array.append(object)\n    }\n}\n\nfunc createBunchOfCopiesOfStruct() {\n    var array = [HugeStruct]()\n    let object = HugeStruct()\n    for _ in 0..<10000000000000 {\n        array.append(object)\n    }\n}\n// 실행 시간이 둘 중에 어느게 더 길지?\ncreateBunchOfReferencesOfClass()\ncreateBunchOfCopiesOfStruct()\n\n\n\n  CFGetRetainCount가 객체의 Reference Counting을 반환해주는 함수일 경우, 아래 코드를 실행 시키면 출력이 어떻게 될까요? 그 이유도 같이 설명해주세요.\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\nfinal class EmptyClass {}\n\nfinal class ClassOfClasses {\n    let emptyClass = EmptyClass()\n    let emptyClass2 = EmptyClass()\n    let emptyClass3 = EmptyClass()\n}\n\nlet classOfClasses = ClassOfClasses()\nlet reference = classOfClasses\nlet reference2 = classOfClasses\nlet reference3 = classOfClasses\n\n// 아래 코드 출력이 어떻게 될지? 그 이유는?\nCFGetRetainCount(classOfClasses)\nCFGetRetainCount(classOfClasses.emptyClass)\nCFGetRetainCount(classOfClasses.emptyClass2)\nCFGetRetainCount(classOfClasses.emptyClass3)\n\n\n\n  CFGetRetainCount가 객체의 Reference Counting을 반환해주는 함수일 경우, 아래 코드를 실행 시키면 출력이 어떻게 될까요? 그 이유도 같이 설명해주세요.\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\nfinal class EmptyClass {}\n\nstruct StructOfClasses {\n    let emptyClass = EmptyClass()\n    let emptyClass2 = EmptyClass()\n    let emptyClass3 = EmptyClass()\n}\n\nlet structOfClasses = StructOfClasses()\nlet copy = structOfClasses\nlet copy2 = structOfClasses\nlet copy3 = structOfClasses\n\n// 아래 코드 출력이 어떻게 될지? 그 이유는?\nCFGetRetainCount(structOfClasses)\nCFGetRetainCount(structOfClasses.emptyClass)\nCFGetRetainCount(structOfClasses.emptyClass2)\nCFGetRetainCount(structOfClasses.emptyClass3)\n\n\nLife Cycle 실험\n\nUIKit에서 두 개의 ViewController이 구성있을 때 서로의 VC가 전환되는 여러 순간에 대해 어떻게 동작할지, View Life Cycle과 관련한 이해를 확인하는 질문으로 구성하였습니다.\niOS 개발자라면 무조건 해볼 Life Cycle 실험에 대해 다시 상기해보고 각 화면 전환에 대해 정확하게 개념을 이해하고 있으면 됩니다.\n\nUIKit에서는 여러 Life Cycle 관련 메소드들을 제공하지만 이번엔 아래 5가지 메소드에 대해서만 다뤄볼 예정입니다. 각 메소드들에 대한 개념과 동작 방식에 대한 질문도 같이 이루어졌습니다.\n\n1\n2\n3\n4\n5\nViewDidLoad\nViewWillAppear\nViewDidAppear\nViewWillDisappear\nViewDidDisappear\n\n\n\n  첫 화면이 보여지는 경우, VC에서 어떤 Life Cycle이 어떤 순서대로 호출이 될까요?\n\n\n\n    \n\n\niOS에서는 화면전환 방식으로 Navigation 방식과 Modal 방식이 있습니다. 처음으로 Modal 방식에서 화면을 전체를 덮지 않을 경우를 생각해봅시다.\n\n\n  첫번째 화면에서 두번째 화면으로 전환하는 경우, 두 화면에서는 Life Cycle이 어떤 순서대로 호출이 될까요?\n이 때 첫번째 화면에서는 Life Cycle 메소드들이 호출이 되나요? 그 이유는 무엇인가요?\n\n\n\n    \n\n\n\n  두번째 화면에서 사용자가 화면을 아래로 당겨 내리기 직전까지 끌어오는 순간에, 두 화면에서는 Life Cycle이 어떤 순서대로 호출이 될까요? (아직 두번째 화면이 내려오지 않은 상황) 그렇게 생각한 이유는 무엇일까요?\n\n\n\n    \n\n\n\n  두번째 화면을 다 내리기 직전 사용자가 변덕이 생겨 두 번째 화면을 다시 덮어버렸을 때, 두 화면에서는 Life Cycle이 어떤 순서대로 호출이 될까요? 그렇게 생각한 이유는 무엇일까요?\n\n\n\n    \n\n\n\n  두번째 화면을 다 내려 첫번째 화면으로 다시 돌아갈 경우, 두 화면에서는 Life Cycle이 어떤 순서대로 호출이 될까요? 그렇게 생각한 이유는 무엇일까요?\n\n\n\n    \n\n\n\n\n이번에는 Navigation 방식을 생각해봅시다. 첫번째 화면이 보여지고 나서 두번째 화면까지 보여진 다음에 다시 첫번째 화면으로 돌아가면 두 화면에서는 Life Cycle이 어떤 순서대로 호출이 될까요? 첫번째 화면의 ViewWillAppear가 먼저 호출이 될까요 아니면 두번째 화면의 ViewWillDisappear가 먼저 호출이 될까요? 두 화면의 메소드 호출 순서를 맞춰볼까요?\n\n\n    \n\n\n알고리즘 라이브코딩 테스트\n\n기초적인 동적 프로그래밍 문제를 통해 알고리즘에 대한 기본기를 확인하였습니다.\n\n1\n두 개의 양의 정수 a와 b가 주어졌을 때, a와 b 사이의 범위(포함)에서 서로 다른 자릿수를 가진 숫자의 개수를 반환하세요.\n\n\n기술 인터뷰를 마무리하며\n\n데이트팝 서비스는 지속적으로 성장하며, 이번에 iOS 주니어 개발자를 채용할 수 있는 기회를 얻었습니다. 회사에서는 오랜만에 채용하게 되는 iOS 주니어 개발자이기에 기본기가 탄탄하신 분들을 모시고자 많은 고민을 하며 인터뷰 질문을 준비했습니다. 지원자들 중 많은 분들이 깊이 있는 학습을 해오셨고, 주니어임에도 불구하고 높은 수준의 역량을 보여주었습니다. 단기간에 학습한 내용이 실제 이해와 적용 가능한 지식으로 내재화되었는지 스스로 점검하는 기회가 되었으면 좋겠습니다. 감사합니다.",
+    "tags": [
+      "ios",
+      "swift",
+      "datepop"
+    ],
+    "author": "unknown-author",
+    "source": "데이트팝 기술블로그"
+  }
+]

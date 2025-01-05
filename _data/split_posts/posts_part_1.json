@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Bootstrap 5.3.3",
+    "link": "https://blog.getbootstrap.com/2024/02/20/bootstrap-5-3-3/",
+    "pubDate": "Tue, 20 Feb 2024 15:22:00 +0000",
+    "excerpt": "Bootstrap v5.3.3 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!\nHighlights\n\nFixed a breaking change introduced with color modes where it was required to manually import variables-dark.scss when building Bootstrap with Sass. Now, _variables.scss will automatically import _variables-dark.scss. If you were already importing _variables-dark.scss manually, you should keep doing it as it won’t break anything and will be the way to go in v6.\nFixed a regression in the selector engine that wasn’t able to handle multiple IDs anymore.\n\nColor modes\n\nBadges now use the .text-bg-* text utilities to be certain that the text is always readable (especially when the customized colors are different in light and dark modes).\nFixed our color-modes.js script to handle the case where the OS is set to light mode and the auto color mode is used on the website. If you copied the script from our docs, you should apply this change to your own script.\nFixed color schemes description in the color modes documentation to show that color-scheme() only accept light and dark values as parameters.\n\nMiscellaneous\n\nAllowed <dl>, <dt> and <dd> in the sanitizer.\nDropped evenly items distribution for modal and offcanvas headers.\nFixed the accordion CSS selectors to avoid inheritance issues when nesting accordions.\nFixed the focus box-shadow for the validation stated form controls.\nFixed the focus ring on focused checked buttons.\nFixed the product example mobile navbar toggler.\nChanged the RTL processing of carousel control icons.\n\nDocs\n\nDropped unnecessary right margin for example code blocks.\nFixed emphasis text utilities usage in background utilities examples section.\nAdded an technical explanation on how to render an accordion expanded by default.\nChanged Vite config path import in Vite guide.\nEnhanced the card image description of the .card-img-* classes.\nMentioned shift-color() function in the Sass customization page among tint-color() and shade-color().\nAdded missing type=\"button\" attribute to the Cheatsheet examples navigation buttons.\nUpdated the colors table in the customization page to be responsive.\n\nGet the release\nHead to https://getbootstrap.com for the latest. It’s also been pushed to npm:",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Bootstrap Blog"
+  },
+  {
+    "title": "Bootstrap 5.3.2",
+    "link": "https://blog.getbootstrap.com/2023/09/14/bootstrap-5-3-2/",
+    "pubDate": "Thu, 14 Sep 2023 14:30:00 +0000",
+    "excerpt": "Bootstrap v5.3.2 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!\nHighlights\n\nPassing a percentage unit to the global abs() is deprecated since Dart Sass v1.65.0. It resulted in a deprecation warning when compiling Bootstrap with Dart Sass. This has been fixed internally by changing the values passed to the divide() function. The divide() function has not been fixed itself so that we can keep supporting node-sass cross-compatibility. In v6, this won’t be an issue as we plan to drop support for node-sass.\nUsing multiple ids in a collapse target wasn’t working anymore and has been fixed.\n\nColor modes\n\nIncreased color contrast of form range track background in light and dark modes.\nFixed table state rendering for color modes with a focus on the striped table in dark mode to increase color contrast.\nAllow <mark> color customization for color modes.\n\nDocs\n\nAdded alternative CDNs section in Getting started -> Download.\nAdded Discord and Bootstrap subreddit links in README and Getting started -> Introduction:\n\nDiscord maintained by the community\nBootstrap subreddit\n\n\n\nGet the release\nHead to https://getbootstrap.com for the latest. It’s also been pushed to npm:",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Bootstrap Blog"
+  },
+  {
+    "title": "Bootstrap Icons v1.11.0",
+    "link": "https://blog.getbootstrap.com/2023/09/12/bootstrap-icons-1-11-0/",
+    "pubDate": "Tue, 12 Sep 2023 00:01:00 +0000",
+    "excerpt": "Bootstrap Icons v1.11.0 has arrived with 100 new icons—including new floppy disk icons, additional brand icons, new person icons, new emojis, some birthday cake, a few new science icons, and more. We’re now at over 2,000 icons!\n100 new icons\nHere’s a quick look at all the new icons in v1.11.0:\n\n\nCheck out the pull request for all the details on which icons were added and which were updated.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Bootstrap Blog"
+  },
+  {
+    "title": "Bootstrap 5.3.1",
+    "link": "https://blog.getbootstrap.com/2023/07/26/bootstrap-5-3-1/",
+    "pubDate": "Wed, 26 Jul 2023 08:05:00 +0000",
+    "excerpt": "Bootstrap v5.3.1 is here with bug fixes, documentation improvements, and more follow-up enhancements for color modes. Keep reading for the highlights!\n\nColor modes:\n\nIncreased color contrast for dark mode by replacing $gray-500 with $gray-300 for the body color\nAdded our color mode switcher JavaScript to our examples ZIP download\n\n\nComponents:\n\nImproved disabled styling for all .nav-links, providing .disabled and :disabled for use with anchors and buttons\nAdd support for Home and End keys for navigating tabs by keyboard\nAdded some basic styling to toggle buttons when no modifier class is present\nFixed carousel colors in dark mode\n\n\nForms:\n\nFixed floating label disabled text color\n\n\nUtilities:\n\n.text-bg-* utilities now use CSS variables\n\n\nSass:\n\nAdd new $navbar-dark-icon-color Sass variable\nRemoved duplicate $alert Sass variables\nAdded a new variable for $vr-border-width to customize the vertical rule helper width\n\n\nDocumentation:\n\nAdded search to our homepage\nImproved responsive behavior on Dashboard example\nImproved dark mode rendering of Cheatsheet examples\n\n\n\nGet the release\nHead to https://getbootstrap.com for the latest. It’s also been pushed to npm:",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Bootstrap Blog"
+  },
+  {
+    "title": "Bootstrap 5.3.0",
+    "link": "https://blog.getbootstrap.com/2023/05/30/bootstrap-5-3-0/",
+    "pubDate": "Tue, 30 May 2023 07:35:00 +0000",
+    "excerpt": "It’s official, the final stable release of v5.3.0 has landed! It’s been a monumental effort to revamp our codebase for CSS variables and color modes, one that will see continued changes leading up to an eventual Bootstrap 6. And we’re so excited to finally ship it!\nOn top of all the work that’s gone into this release, a lot has happened behind the scenes since we shipped our pre-releases. Keep reading to learn everything that’s new in v5.3.0.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Bootstrap Blog"
+  },
+  {
+    "title": "Bootstrap 5.3.0-alpha3",
+    "link": "https://blog.getbootstrap.com/2023/04/03/bootstrap-5-3-0-alpha3/",
+    "pubDate": "Mon, 03 Apr 2023 07:35:00 +0000",
+    "excerpt": "Hot on the heels of our second alpha, we’re releasing a third (and unexpected) alpha for v5.3.0 today with some fixes for some Node Sass compilation errors. In addition, we’ve added a handful of other updates. We’re still on target to ship our stable release soon!\nOnce again, if you’re new to the v5.3.0 alpha releases, please read through the Migration guide for the first alpha and last month’s second alpha.\nHere’s a look at what’s changed in this quick release:",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Bootstrap Blog"
+  },
+  {
+    "title": "Bootstrap 5.3.0-alpha2",
+    "link": "https://blog.getbootstrap.com/2023/03/24/bootstrap-5-3-0-alpha2/",
+    "pubDate": "Fri, 24 Mar 2023 14:40:00 +0000",
+    "excerpt": "Our second alpha release of v5.3.0 has landed with a ton of enhancements and bug fixes for our new color modes! There’s still more to come, but we’ve held off shipping until we ironed out enough issues. Huzzah, we have!\nThis v5.3.0 release is a monumental update for Bootstrap 5. It’s big enough that it could’ve been a v6 on its own, but we wanted to do right by the community and get color modes out the door without the massive major release upgrade. We’re getting super close now, so bear with us as we continue to chip away at this.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Bootstrap Blog"
+  },
+  {
+    "title": "别相信直觉 - 读书笔记",
+    "link": "https://tw93.fun/2024-10-13/intuition.html",
+    "pubDate": "Sun, 13 Oct 2024 00:00:00 -0400",
+    "excerpt": "最近看完了「别相信直觉」用数据思维获取你想要的生活这本小书，比较简单好读，基本上花一下午就可以看完，把生活中可能会遇到的婚恋、育儿、财富、创业、运气、外貌、快乐、痛苦都给讲了讲，把里面有一些有意思的观点记录到这里。\n\n\n\n婚恋\n\n\n  一个人如果单身的时就十分幸福，那么在他建立亲密关系后，他也会十分幸福。\n  在相亲市场上，人们竞相追求的相亲对象不一定让人感情幸福。预测感情是否幸福的难度是非常高的。\n  找伴侣需要考虑的最重要的特征是他的性格，对生活的满意度、安全性依恋、尽责型、成长型心态。\n  外貌会影响一个人的吸引力，而且影响非常显著，身高在男性吸引女性方面发挥重要作用，此外相亲过程中种族歧视非常明显。\n  收入影响一个人在相亲市场的表现，且对男的影响最大。\n  一个很酷的职业比虽然挣得多但枯燥的职业更能吸引女性。\n  建议相亲的人把寻找范围更多集中在那些缺乏高度竞争力的人身上，集中在那些有强大心理素质的人身上。\n\n\n育儿\n\n\n  父母对于孩子整体的发展影响小的出奇（前提是不作恶，正常养育），在养育子女方面，你可能需要更多关注孩子接触的人，这才是影响孩子未来发展的关键因素。\n  从事不同运动的申请者在大学获得奖学金的比例有巨大差异，可以选择申请人少的项目这样就没有那么卷。\n  有些运动能力与基因关系很大，比如说篮球，但是基因在棒球和橄榄球中的重要性远不及在篮球的一半，马术和跳水受基因影响很小。\n\n\n财富\n\n\n  以薪水为基础通往财富自由之路的案例非常罕见，富人一般都拥有自己的企业。\n  不同行业的致富情况差异巨大，富人一般都是拥有盈利的企业，\n  保持企业利润很重要，避免价格竞争，基于零利润定理，价格竞争将会持续下去，直到利润为 0，一些几乎不可能让人致富的行业，建筑设备承包商、住宅建筑、汽车维修和保养、住房买卖租赁服务、建筑工程和相关服务、室内装修设计承包商、个人护理服务、加油站。\n  真正适合创业的领域，一般是大企业允许许多区域性垄断企业存在的领域，6 大致富行业有房地产、投资、汽车经销、独立创意、市场研究、其他商品经销。\n  想要致富，你可以利用数据所反应出来的内容来理解职业生涯的三大必问问题。1、我有自己的企业吗？2、我的企业可以避开无情的价格竞争吗？3、我的企业所在行业可以避免被全球化巨头垄断吗？\n\n\n创业\n\n\n  创业并非是年轻人的优势，美国企业创始人的平均年龄是 41.9 岁，一个 60 岁的初创企业创始人创建一家有利可图的企业概率大概是一个 30 岁初创企业创始人的三倍。\n  并非局外人更有优势创业，在商业领域，深厚的领域知识储备不是诅咒，不会阻碍企业家创新，相反，在商业领域，成为一名优秀的内部人士对创业的来说优势更大。\n  当创始人在创业前的收入进入所在行业的前 0.1%时，他们创业成功率最高。\n  在成功之路要有耐心，用多年时间学习一个行业的各种知识和细节，通过成为行业内薪水最高的员工来证明你的价值，然后再去创业，最终获得真正的财富。可以花多年的时间巩固专业知识，建立人脉网，同时在一个行业取得成功，然后再中年时开始独立创业。\n\n\n运气\n\n\n  山姆·奥尔特曼：创业成功 = 想法 x 产品 x 执行 x 团队 x 运气，而运气是 0 ～ 10000 的随机数。\n  克林斯和汉森：成功公司的运气并不比其他公司好，他们只是能更好利用所获得的运气，利用任何一家公司都能遇到的运气。\n  在难以评价一个人表现好坏的领域里，有两个突出的效应，蒙娜丽莎效应：不可预测的事件对成功产生很大的影响（在展出前 114 年一直也是这么挂着，和其他的没有什么区别，直到 1911 年，发现被一个很蠢的小偷给偷走了，然后到处报道才引起很大的关注）；达芬奇效应：艺术家的一次成功会给他带来更多次的成功，人们愿意花更多钱购买已经成名的艺术家的作品。\n  斯普林斯汀定律：四处旅行，寻找你的运气。讲到了画家的例子，在世界各个地方画廊展示他们的作品，不放过任何一次机会。\n  毕加索定律：多产的艺术家更有机会收获幸运，在相亲中、就业中也可以运用这个定律，多次尝试。\n\n\n快乐\n\n\n  个人外貌和他人印象之间有强关联，灯光和笑容的细微差别以及胡子、发型、银镜等更大外貌变化对人们的吸引力有很大影响，可以借助 AI 生成多个风格的你、快速市场调研和统计分析评估外貌。\n  峰终定律：在判断过去一段经历的好或坏时，我们基于的不是过程，而是峰值的感受（好的时候有多好，坏的时候有多坏）和结束时候的感受（无论好坏）。\n  让自己快乐的最好方法之一是，避免下意识地拒绝做一些看起来需要大量精力的事情。\n  一切都很好，但没有人快乐，金钱对于快乐的影响很小。思维限制我们追求快乐的一个关键是：由于我们无法专注于当下；人们常深陷沮丧情绪而无法自拔\n  缓解工作痛苦的办法：听音乐、居家办公、和朋友一起工作。\n  人们最快乐的时候是与恋人、朋友等我们选择的人待在一起的时候。此外自己独处时总比弱关系互动时快乐。\n  社交媒体可能让我们不开心，在社交媒体上互动是休闲活动中产生快乐最少的一项活动。\n  失利给球迷带来痛苦远远超过胜利带来的快乐，建议观看更多你不是铁杆球迷球赛的比赛。\n  人想要快乐，可以走进大自然，寻找周围美丽风景。明媚的阳光、完美的天气确实可以改变我们的心情，但是不要夸大天气的重要性，天气本身不能让你快乐，你还是需要和让你快乐的人一起做让你快乐的事情。\n  快乐排名活动表：性爱、戏剧舞蹈音乐会、看展览/逛博物馆/去图书馆、运动锻炼、园艺活动、唱歌表演、与人聊天进行社交、观鸟/自然观察、散步远足、打猎/钓鱼、喝酒、业余爱好/艺术/工艺、冥想/宗教活动、比赛/体育赛事、照顾孩子/和孩子一起玩、照顾宠物/和宠物一起玩、听音乐、玩游戏、购物/跑腿、赌博、看电视、玩电脑游戏、吃饭吃零食、做饭/准备食材、喝茶/咖啡、阅读、听演讲播客\n  最不快乐活动表：卧病在床、工作/学习、照顾和帮助成年人、等待/排队、行政/财务/管理、开会/上课、旅行/通勤、做家务。",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Tw93 Blog"
+  },
+  {
+    "title": "聊聊未来技术趋势",
+    "link": "https://tw93.fun/2024-09-09/future.html",
+    "pubDate": "Mon, 09 Sep 2024 00:00:00 -0400",
+    "excerpt": "img,video {\n  border:1px solid #f0f0f0;\n}\n\n\n\n  最近在团队的一个分享，基于自己对 AI、投资、下一代技术的一些理解，结合网络上的 ark 报告、资料、论文、财报等梳理了下，假如有不懂的名词可以问 GPT，希望你开心，但不要在不懂市场的情况下基于此去投资，风险会很高，分享的 PDF 文件以及参考资料在文章结尾可以找到。\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpaceX 的火箭回收技术\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOneKey 硬件钱包\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPDF 文件下载\n\n聊聊未来技术趋势_Tw93.pdf\n\n参考资料\n\n\n  ARK Invest Big Ideas 2024\n  App Economy Insights\n  3D 动画揭秘芯片完整的制造流程和制造工艺\n  AI Supremacy 发展报告\n  李沐讲座：大语言模型的实践经验和未来预测\n  The LLM Triangle Principles to Architect Reliable AI Apps\n  AI 50: Companies of the Future\n  Apple Intelligence 为 iPhone、iPad 和 Mac 引入强大的生成式模型\n  OneKey硬件钱包\n  METAMASK 加密货币钱包和区块链应用程序网关\n  比特币-维基百科\n  比特币的工作原理\n  智能合约编写之Solidity运行原理\n  全球各种资产在过去10 年的收益率对比图\n  埃隆·马斯克传\n  Tesla AI & Robotics",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Tw93 Blog"
+  },
+  {
+    "title": "置身事内 - 读书笔记",
+    "link": "https://tw93.fun/2024-06-30/china.html",
+    "pubDate": "Sun, 30 Jun 2024 00:00:00 -0400",
+    "excerpt": "看书\n\n\n\n最近把「置身事内 - 中国政府与经济发展」这本书读完了，去年粗读了下，最近趁着杭州持续下雨呆家里听着雨声看看书很自在，是一本可以读两遍的好书，花了点时间把一些不错的观点摘抄备忘。\n\n抄书\n\n\n  \n    我国经济中有个现象：处在行政交界（尤其是省交界处）的地区，经济发展普遍比较落后。\n  \n  \n    我国幅员辽阔，但人口分布极不平衡。如果从黑龙江的瑷珲（今黑河市南）到云南的腾冲之间画一条直线，把国土面积一分为二，东边占了 43%的面积却住了 94%的人口，而西边占了 57%的面积却只住了 6%的人口。\n  \n  \n    2019 年，浙江省 53 个县（含县级市）里，18 个是全国百强县。但在其他一些省份，“省直管县”改革至少遭遇了两个困难。首先是省里管不过来。改革前，一个省平均管 12 个市，改革后平均管 52 个市县。钱和权给了县，但监管跟不上，县域出现了种种乱象，比如和土地有关的腐败盛行。\n  \n  \n    获取和传递信息需要花费大量时间精力，上级要不断向下传达，下级要不断向上汇报，平级要不断沟通，所以体制内工作的一大特点就是“文山会海”。作为信息载体的文件和会议也成了权力的载体之一，而一套复杂的文件和会议制度就成了权力运作不可或缺的部分。\n  \n  \n    公众所接触的信息和看到的现象，大都已经是博弈后的结果，而缺少社会阅历的学生容易把博弈结果错当成博弈过程。\n  \n  \n    所谓权力，实质就是在说不清楚的情况下由谁来拍板决策的问题。\n  \n  \n    要想把握政府的真实意图和动向，不能光读文件，还要看政府资金的流向和数量，所以财政从来不是一个纯粹的经济问题。\n  \n  \n    要理解政府治理和运作的模式，首先要了解权力和资源在政府体系中的分布规则，既包括上下级政府间的纵向分布，也包括同级政府间的横向分布。\n  \n  \n    我国政府各层级之间的职能基本同构，上级领导下级。原则上，上级对下级的各项工作都有最终决策权，可以推翻下级所有决定。但上级不可能掌握和处理所有信息，所以很多事务实际上由下级全权处理。即使上级想干预，常常也不得不依赖下级提供的信息。比如上级视察工作，都要听取下级汇报，内容是否可靠，上级不见得知道。如果上级没有独立的信息来源，就可能被下级牵着鼻子走。 所以上级虽然名义上有最终决定权，拥有“形式权威”，但由于信息复杂、不易处理，下级实际上自主性很大，拥有“实际权威”。维护两类权威的平衡是政府有效运作的关键。若下级有明显信息优势，且承担主要后果，那就该自主决策。若下级虽有信息优势，但决策后果对上级很重要，上级就可能多干预。但上级干预可能会降低下级的工作积极性，结果不一定对上级更有利。\n  \n  \n    因为信息复杂，不可信的信息比比皆是，而权力和责任又高度个人化，所以体制内的规章制度无法完全取代个人信任。上级在提拔下级时，除了考虑工作能力外，关键岗位上都要尽量安排信得过的人。\n  \n  \n    成功的政策背后是成功的协商和妥协，而不是机械的命令与执行，所以理解利益冲突，理解协调和解决机制，是理解政策的基础。\n  \n  \n    我国地方政府推动经济发展的模式有三大特点，一是城市化过程中“重土地，轻人”，二是招商引资竞争中“重规模，重扩张”，三是经济结构上“重投资、重生产、轻消费”。\n  \n  \n    所谓“土地财政”，不仅包括巨额的土地使用权转让收入，还包括与土地使用和开发有关的各种税收收入，当然地方政府本来也不是靠卖地赚钱，它真正要的是土地开发之后吸引来的工商业经济活动。\n  \n  \n    经济学家张五常曾做过一个比喻：地方政府就像一家商场，招商引资就是引入商铺。商铺只要交一个低廉的入场费用（类似工业用地转让费），但营业收入要和商场分成（类似增值税，不管商铺是否盈利，只要有流水就要分成）。商场要追求总体收入最大化，所以既要考虑入门费和租金的平衡，也要考虑不同商铺间的平衡。一些商铺大名鼎鼎，能为商场带来更大客流，那商场不仅可以免除它们的入门费，还可以降低分成，甚至可以倒贴（类似地方给企业的各种补贴）。\n  \n  \n    这种以土地为中心的城市化忽视了城市化的真正核心：人。地价要靠房价拉动，但房价要由老百姓买单，按揭要靠买房者的收入来还。所以土地的资本化，实质是个人收入的资本化。支撑房价和地价的，是人的收入。忽略了人，忽略了城市化本该服务于人，本该为人创造更好的环境和更高的收入，城市化就入了歧途。\n  \n  \n    地方政府不仅可以为经济发展创造环境，它本身就是经济发展的深度参与者，这一点在招商引资过程中体现得淋漓尽致。\n  \n  \n    我国经济结构失衡的最突出特征是消费不足……居民收入转移到了政府和企业手中，变成了公路和高铁等基础设施、厂房和机器设备等，而老百姓汽车和家电等消费品占比则相对较低……在经济发展初期，将更多资源从居民消费转为资本积累，变成基础设施和工厂，可以有效推动经济起飞和产业转型，提高生产率和收入，但当经济发展到一定阶段后，这种方式就不可持续了。\n  \n  \n    房地产常被称作“经济周期之母”，根源就在于其内在的供需矛盾：一方面，银行可以通过按揭创造几乎无限的新购买力；而另一方面，不可再生的城市土地供给却有限。这对矛盾常常会导致资产泡沫与破裂的周期循环，是金融和房地产不稳定的核心矛盾。而房地产不仅连接着银行，还连接着千家万户的财富和消费，因此影响很大。\n  \n  \n    房价上涨时不仅会增加按揭债务负担，还会拉大贫富差距，进而刺激低收入人群举债消费，这一现象被称为“消费下渗”，在负债的人当中，低收入人群的债务负担尤其重，居民债务居高不下，会很难抵御经济衰退，尤其是房产价格下跌所引发的经济衰退。低收入人群的财富几乎全部就是房产，其中大部分是欠银行的按揭，负债率很高，很容易受到房价下跌的打击。\n  \n  \n    要化解居民债务风险，除了遏制房价上涨势头以外，根本的解决之道还在于提高收入，尤其是中低收入人群的收入，鼓励他们到能提供更多机会和更高收入的地方去工作。让地区间的经济发展和收入差距成为低收入人群谋求发展的机会，而不是变成人口流动的障碍。\n  \n  \n    累积的财富差距一般远大于每年的收入差距，因为有财富的人往往更容易积累财富，资产回报更高，可选择的投资方式以及应对风险的手段也更多。\n  \n  \n    在购置土地环节，发达国家一般要求企业使用自有资本金，而我国允许房企借钱“买地”，这就刺激了房企竞相抬高地价和储备土地。储备的土地又可以作为抵押去撬动更多借贷资金，进而储备更多土地，所以房企规模和债务都越滚越大。\n  \n  \n    北京居民的户均总资产（不是净资产，未扣除房贷和其他负债）是 893 万元，上海是 807 万元，是新疆（128 万元）和吉林（142 万元）的六七倍。这个差距大部分来自房价。房价上涨也拉大了同城之内的不平等。房价高的城市房屋空置率往往也高，一边很多人买不起房，一边很多房子空置。如果把房子在内的所有家庭财富（资产）算在一起的话，按照上述中国人民银行的调查数据，2019 年最富有的 10%的人占有总财富的 49%，而最穷的 40%的人只占有总财富的 8%。 房价上涨不仅会增加按揭债务负担，还会拉大贫富差距，进而刺激低收入人群举债消费，这一现象被称为“消费下渗”（ trickle-down consumption），这在发达国家是很普遍的。2014-2017 年间，我国收入最低的 50%的人储蓄基本为零甚至为负（入不敷出）。自 2015 年起，信用卡、蚂蚁花呗、京东白条等各种个人消费贷激增。根据中国人民银行关于支付体系运行情况的数据，2016-2018 年这三年，银行信用卡和借记卡内合计的应偿还信贷余额年均增幅接近 30%。2019 年，信用卡风险浮现，各家银行纷纷刹车。\n  \n  \n    我国居民债务负担接近发达国家，政府债务负担低于发达国家，但企业债务负担远高于发达国家。\n  \n  \n    中国人财富的压舱石是房子，美国人财富的压舱石是金融资产，这个重大差别可以帮助理解两国的一些基本政策，比如中国对房市的重视以及美国对股市的重视。\n  \n  \n    债务累积或“加杠杆”的过程，就是人与人之间商业往来增加的过程，会推动经济繁荣。而债务紧缩或“去杠杆”的也就是商业活动减少的过程，会带来经济衰退。\n  \n  \n    居民债务居高不下，就很难抵御经济衰退。尤其是房产价格下跌所引发的经济衰退。低收入人群的财富几乎全部是房产，其中大部分是欠银行的按揭，负债率很高，很容易受到房价下跌的打击。在 2008 年美国的房贷危机中，每 4 套按揭贷款中就有 1 套资不抵债，很多穷人的资产一夜清零。2007 年至 2010 年，美国最穷的 20%的人，净资产从平均 3 万美元下降到几乎为零。而最富的 20%的人，净资产只下跌了不到 10%，从平均 320 万美元变成了 290 万美元，而且这种下跌非常短暂。2016 年，随着股市和房市的反弹，最富的 10%的人实际财富（扣除通货膨胀）比危机前还增长了 16%。但收入底部的 50%的人，实际财富被腰斩，回到了 1971 年的水平。40 年的积累，在一场危机后荡然无存。\n  \n  \n    总体看来，无论是破产重整还是破产清算，我国在企业退出方面的制度改革和建设还有很长的路要走。\n  \n  新能源技术必须在没有竞争优势的时候就进入市场，这时候只有两个办法：第一是对传统能源征收高额碳税或化石燃料税，增加其成本，为新能源的发展制造空间；第二是直接补贴新能源行业。第一种办法明显不够经济，因为在新能源发展早期，传统能源占据九成以上的市场，且成本低廉，对其征收重税会大大加重税收负担，造成巨大扭曲。所以更加合理的做法是直接补贴新能源，加速其技术进步和成本降低，待其市场份额不断扩大、成本逼近传统能源之后，再逐渐降低补贴，同时对传统能源征税，加速其退出。\n30.\n  大到经济发展模式，小到具体产业政策，不存在脱离了具体场景、放之四海而皆准的答案，必须具体问题具体分析，并根据现实变化不断调整。政策工具需要不断发展和变化，因为政府能力和市场条件也在不断发展和变化。在这个意义上，深入了解发达国家的真实发展历程，了解其经历的具体困难和脱困方式，比夸夸其谈的“华盛顿共识”更有启发。\n\n\n感悟\n\n整体而言作者属于偏正面来讲，同样也有很多背面的东西应该不太好说，不过已经算是当前很不错的一本讲诉中国经济和政策的书籍了，相比原来的的我看完这本书，至少看到了更深一点儿的东西，也修正了一些自己原来错误的认知以及不知道的东西，挺好的，读书就是一个逐步修正自己视角认知的过程。",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Tw93 Blog"
+  }
+]

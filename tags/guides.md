@@ -2,7 +2,8 @@
 layout: tag
 title: guides
 permalink: /tags/guides/
-count: 1
+count: 2
 ---
 
-- [Computer Science Resources](https://itsmejayd.github.io/blog/resources%20directory/cs-resources/)
+- [Google Docs Tricks](https://blog.chraebsli.dev/guides/google-docs-tricks/)
+- [Add Shared Google Drive Folder/ File to My Drive](https://blog.chraebsli.dev/guides/add-shared-google-drive-folder-to-my-drive/)

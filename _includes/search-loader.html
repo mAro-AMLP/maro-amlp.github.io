@@ -6,44 +6,78 @@
 {% capture result_elem %}
   <article class="px-1 px-sm-2 px-lg-4 px-xl-0">
     <header>
-      <h2><a href="{url}">{title}</a></h2>
+      <h2><a href="{link}" target="_blank">{title}</a></h2>
       <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
-        {categories}
-        {tags}
+        <div><i class="fa fa-calendar-alt fa-fw"></i>{pubDate}</div>
+        <div><i class="fa fa-tag fa-fw"></i>{tags}</div>
       </div>
     </header>
-    <p>{snippet}</p>
+    <p>{excerpt}</p>
   </article>
 {% endcapture %}
 
 {% capture not_found %}<p class="mt-5">{{ site.data.locales[include.lang].search.no_results }}</p>{% endcapture %}
 
 <script>
-  {% comment %} Note: dependent library will be loaded in `js-selector.html` {% endcomment %}
-  document.addEventListener('DOMContentLoaded', () => {
-    SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('search-results'),
-      json: '{{ '/assets/js/data/search.json' | relative_url }}',
-      searchResultTemplate: '{{ result_elem | strip_newlines }}',
-      noResultsText: '{{ not_found }}',
-      templateMiddleware: function(prop, value, template) {
-        if (prop === 'categories') {
-          if (value === '') {
-            return `${value}`;
-          } else {
-            return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
-          }
+  document.addEventListener('DOMContentLoaded', async () => {
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
+    const searchWrapper = document.getElementById('search-result-wrapper');
+
+    // Load and merge split JSON files
+    async function loadSplitFiles() {
+      const indexUrl = '{{ "/assets/js/data/split_posts/index.json" | relative_url }}';
+      try {
+        // Fetch the index.json
+        const indexResponse = await fetch(indexUrl);
+        if (!indexResponse.ok) throw new Error(`Failed to fetch index.json: ${indexResponse.statusText}`);
+        
+        const splitFiles = await indexResponse.json();
+        const posts = [];
+
+        // Fetch and merge all split files
+        for (const file of splitFiles) {
+          const fileUrl = '{{ "/assets/js/data/split_posts/" | relative_url }}' + file;
+          const fileResponse = await fetch(fileUrl);
+          if (!fileResponse.ok) throw new Error(`Failed to fetch ${file}: ${fileResponse.statusText}`);
+          
+          const json = await fileResponse.json();
+          posts.push(...json);
         }
 
-        if (prop === 'tags') {
-          if (value === '') {
-            return `${value}`;
-          } else {
-            return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
-          }
-        }
+        return posts;
+      } catch (error) {
+        console.error("Error loading split files:", error);
+        return [];
       }
+    }
+
+    // Load posts and initialize search
+    const posts = await loadSplitFiles();
+
+    SimpleJekyllSearch({
+      searchInput: searchInput,
+      resultsContainer: searchResults,
+      data: posts,
+      searchResultTemplate: '{{ result_elem | strip_newlines }}',
+      noResultsText: '{{ not_found }}',
+      templateMiddleware: function (prop, value) {
+        if (prop === 'tags') {
+          if (Array.isArray(value)) {
+            return value.map(tag => `<a href="/tags/${tag | slugify}/">${tag}</a>`).join(', ');
+          }
+          return value;
+        }
+        return value;
+      }
+    });
+
+    // Show/hide search wrapper
+    searchInput.addEventListener('focus', () => {
+      searchWrapper.classList.remove('d-none');
+    });
+    searchInput.addEventListener('blur', () => {
+      setTimeout(() => searchWrapper.classList.add('d-none'), 200);
     });
   });
 </script>
