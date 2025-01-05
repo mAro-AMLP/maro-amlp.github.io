@@ -1,16 +1,16 @@
 ---
 layout: tag
-title: Code
+title: code
 permalink: /tags/code/
 count: 9
 ---
 
-- [Gao Su Gong Lu Bian Hao Bei Hou De Shu Xue Mi Ma ](https://www.longluo.me/blog/2024/04/21/decode-the-highway-system-numbers/)
-- [Pullquotes](http://www.amitmerchant.com/reverie/pullquotes/)
-- [Code snippets in a blog post](http://www.amitmerchant.com/reverie/code-snippets/)
-- [Markup: Syntax Highlighting](https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/)
-- [History Game](https://matan-h.com/cyber/history-game/)
-- [Build a quick and private online converter](https://matan-h.com/build-quick-private-online-converter)
-- [How to set up a development environment in Android](https://matan-h.com/how-to-set-up-a-development-environment-in-android/)
-- [Binary Tree different traversal ways](https://simonwei97.github.io/blog/2023/binary-tree-traversal/)
-- [Some of My Online Courses Certificates](https://samirpaulb.github.io/blog-jekyll/posts/some-of-my-online-courses-certificates/)
+- [Codeforces think-cell Round 1](https://tllwtg.top/2024/02/18/CF_think_cell_1/)
+- [Codeforces Round 923 (Div.3)](https://tllwtg.top/2024/02/07/CF_923/)
+- [Codeforces Round 922 (Div.2)](https://tllwtg.top/2024/01/31/CF_922/)
+- [Codeforces Round 921 (Div.2)](https://tllwtg.top/2024/01/28/CF_921/)
+- [Educational Codeforces Round 161](https://tllwtg.top/2024/01/20/CF_Edu161/)
+- [Codeforces Round 920 (Div.3)](https://tllwtg.top/2024/01/19/CF_920/)
+- [First Year in XMU](https://tllwtg.top/2023/09/05/First-Year/)
+- [ACM Template](https://tllwtg.top/2023/03/16/ACM-Template/)
+- [Strict Weak Ordering](https://tllwtg.top/2023/01/10/Ordering/)

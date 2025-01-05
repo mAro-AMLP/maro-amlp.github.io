@@ -1,0 +1,95 @@
+[
+  {
+    "title": "Bitwarden Password Manager - Usage & Features",
+    "link": "https://blog.chraebsli.dev/guides/security/bitwarden-password-manager-usage-features/",
+    "pubDate": "Wed, 22 Feb 2023 10:57:00 +0100",
+    "excerpt": "In this post, you will learn how to use the Bitwarden password manager in your daily life and what can you do with it.\n\nSave an item\n\n\n  To save an item, you need to click on the + or the New Item button in the top right corner of the screen. This depends on the device you are using.\n  Select the type of item you want to save. (Visit this section for more information about the different types of items)\n  Fill in the information of the item you want to save.\n  Click on the Save button.\n\n\nTypes of items\n\nBitwarden supports different types of items you can store. These are passwords, credit card and bank account numbers, identities, notes, and files.\n\nPasswords\n\nPasswords are the most common type of item you will save in Bitwarden. You can save a password for a website, an application, or a service. You can store the following information:\n\n\n  Name: The name of the item you will see in the list of items\n  Folder: The folder you want to save the item in (Visit this section for more information about folders)\n  Username: The username you use to log in\n  Password: The password you use to log in\n  URI: The URL of the website, application, or service\n  Notes: Any additional information\n  Attachment: Any type of file (for example, a PDF file with a license key)\n  TOTP: The TOTP code for MFA (Visit this section for more information about TOTP codes)\n  Custom Fields: Any custom fields you want to save with the item\n\n\nIf you save critical passwords, like for your bank account, I recommend you to enable the require master password to view option. This way, you will need to enter your master password to view the password. This gets you a little more security.\n\nCredit card and bank account numbers\n\nYou can save credit card and bank account numbers in Bitwarden that you use for online shopping. This is useful if you don’t have your physical credit card with you. You can fill in the following information:\n\n\n  Name: The name of the item you will see in the list of items.\n  Folder: The folder you want to save the item in (Visit this section for more information about folders)\n  Cardholder Name: The name of the cardholder\n  Brand: The brand of the credit card\n  Exp. Date: The expiration date of the credit card\n  CVV: The CVV code of the credit card\n  Notes: Any additional information\n  Custom Fields: Any custom fields you want to save with the item\n\n\nI highly recommend you enable the require master password to view option. This way, you will need to enter your master password to view the credit card or bank account number. This gets you a bit more security.\n\nIdentities\n\nYou can also save identities in Bitwarden with your personal information. This is useful if you want to save your personal information and let it autofill in forms.\n\nNotes\n\nYou can save notes or other information in Bitwarden. I use it to store license keys, serial numbers, API keys, SSH keys, etc.\n\nFeatures\n\nBitwarden has a lot of features which makes it the best password manager for me. In this section, I will explain some great features.\n\nFolders\n\nYou can save items in folders. This is useful if you have a lot of items and want to organize them. You can create a folder by clicking on the + button in the navigation bar on the left side of the screen (desktop) or in the settings (mobile).\n\nWhen you create or edit an item, you can select the folder you want to save the item in. If you don’t select a folder, the item will be saved in No Folder.\n\nTOTP\n\nTOTP is an MFA1 method to give an extra layer of security when login to a service. This works by generating a code based on a secret and the actual time. You can use it to generate a one-time password that you can use to log in to a website, application, or service. While autofilling the password on a website, it copies the TOTP code to your clipboard. You can then paste the TOTP code in the TOTP field in the authentication form.\n\nNote: This feature is only available with the premium version of Bitwarden.\n\nAutofill\n\nBitwarden can autofill your passwords, credit card and bank account numbers and identities. This is useful if you don’t want to copy and paste the data in forms. This only works on mobile and web browsers. You can enable the autofill feature in the settings.\n\nPassword generator\n\nBitwarden has a password generator that you can use to generate a strong password. You can manually change the strength of the password and apply some rules for generating it. Bitwarden can generate passwords with numbers, symbols, uppercase and lowercase letters and also mix them.\n\n  \n    \n      MFA = Multi-Factor Authentication ↩",
+    "tags": [
+      "security",
+      "guidessecurity"
+    ],
+    "author": "unknown-author",
+    "source": "Coding Crab Blog"
+  },
+  {
+    "title": "Updates on coatldev/six",
+    "link": "https://coatl.dev/news/2024/09/06/updates-on-coatldev-six/",
+    "pubDate": "Fri, 06 Sep 2024 11:00:00 -0700",
+    "excerpt": "Focusing on Python 3.12 - \n          Approximately six months ago, we introduced our official Docker image for CI. However, a major change was made three months ago that significantly impacts our setup. Let’s dive into the details! What happened? Before June 17, 2024, our Docker image supported Python versions ranging from 3.8 to 3.13 (including alpha...",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "coatl.dev"
+  },
+  {
+    "title": "Announcing our Docker image for CI",
+    "link": "https://coatl.dev/news/2024/03/23/announcing-our-docker-image-for-ci/",
+    "pubDate": "Sat, 23 Mar 2024 15:59:00 -0700",
+    "excerpt": "Finally - \n          We are thrilled to announce the release of our new Docker image called six, designed specifically for developers who are still working on Jython or Python 2.7 projects. This Docker image is tailored for seamless integration into Azure Pipelines and GitHub workflows, making it easier than ever to manage and...",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "coatl.dev"
+  },
+  {
+    "title": "ignition-api-stubs and the path forward",
+    "link": "https://coatl.dev/news/2023/02/04/ignition-api-stubs-and-the-path-forward/",
+    "pubDate": "Sat, 04 Feb 2023 12:27:00 -0800",
+    "excerpt": "We are announcing that ignition-api-stubs 8.1.24 will be the last release officially supporting Python 3.6. Starting with version 8.1.25 our stubs package can be installed using Python 3.7 through 3.10. Why drop Python 3.6 while we still support Python 2.7? We understand this may sound odd considering we are actively...",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "coatl.dev"
+  },
+  {
+    "title": "Python 3 tools I use for my Python 2 projects - 2024 edition",
+    "link": "https://cesar.coatl.dev/2024/03/01/python-3-tools-i-use-for-my-python-2-projects-2024-edition/",
+    "pubDate": "Fri, 01 Mar 2024 12:56:00 -0800",
+    "excerpt": "Fighting to keep Python 2 alive - \n          TOC Introduction Background The Python 3 toolset Which Python 3? Packaging and publishing CI/CD Conclusion Introduction Welcome to part 5 on coding standards and code quality: 79 characters How I use black, flake8 and isort to format Python2 code pre-commit.ci and pydocstyle join the family Of camels and snakes While...",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "César Román - Coder, Blogger"
+  },
+  {
+    "title": "Upcoming articles in 2024",
+    "link": "https://cesar.coatl.dev/2023/12/31/upcoming-articles-in-2024/",
+    "pubDate": "Sun, 31 Dec 2023 18:31:00 -0800",
+    "excerpt": "Hello, readers! These are some of the upcoming articles in this space. Python 3 tools I use for my Python 2 projects - 2024 edition (link) Why I chose tox over nox? Caching in Azure Pipelines and GitHub Actions - Real life examples Moving from setup.cfg to pyproject.toml Switching from...",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "César Román - Coder, Blogger"
+  },
+  {
+    "title": "We've relocated",
+    "link": "https://cesar.coatl.dev/2023/07/02/we-ve-relocated/",
+    "pubDate": "Sun, 02 Jul 2023 14:58:00 -0700",
+    "excerpt": "We’ve moved from thecesrom.dev to cesar.coatl.dev.\n\nUpdate your bookmarks!",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "César Román - Coder, Blogger"
+  },
+  {
+    "title": "CI/CD - The April 2023 Python 2 apocalypse",
+    "link": "https://cesar.coatl.dev/2023/04/29/ci-cd-the-april-2023-python-2-apocalypse/",
+    "pubDate": "Sat, 29 Apr 2023 15:14:00 -0700",
+    "excerpt": "Let’s begin by addressing why I still use Python 2. Why Python 2? I’ve written multiple times about Python 2 and how I still use it for work and personal projects both locally and on my CI/CD pipelines on GitHub and Azure DevOps. I am well aware Python 2 reached...",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "César Román - Coder, Blogger"
+  },
+  {
+    "title": "Installing pyenv and managing Python versions in Ubuntu",
+    "link": "https://cesar.coatl.dev/2023/03/10/installing-pyenv-and-managing-python-versions-in-ubuntu/",
+    "pubDate": "Fri, 10 Mar 2023 14:35:00 -0800",
+    "excerpt": "From macOS to Ubuntu, Pt. 2 - \n          Read Part 1 here. Coming from macOS into Ubuntu required some “getting used to things”. Like using apt (and nala), but still I installed Homebrew for Linux, as most of the utilities are not up to date, and being more used to Homebrew it only made sense to me. So,...",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "César Román - Coder, Blogger"
+  },
+  {
+    "title": "Taking a ten-year-old MacBook Air out for one last ride with Ubuntu",
+    "link": "https://cesar.coatl.dev/2023/02/18/taking-a-ten-year-old-macbook-air-out-for-one-last-ride-with-ubuntu/",
+    "pubDate": "Sat, 18 Feb 2023 12:42:00 -0800",
+    "excerpt": "From macOS to Ubuntu, Pt. 1 - \n          When I started this blog I wrote about reinstalling macOS 10.15, better know as Catalina, on my Mid 2012 13” MacBook Air, which in its 10 years with me all I’ve done to it is replace the battery, and more recently I had to get a new power adapter. Not...",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "César Román - Coder, Blogger"
+  }
+]

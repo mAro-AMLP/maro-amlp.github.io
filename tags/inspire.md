@@ -1,8 +1,0 @@
----
-layout: tag
-title: inspire
-permalink: /tags/inspire/
-count: 1
----
-
-- [Some of My Online Courses Certificates](https://samirpaulb.github.io/blog-jekyll/posts/some-of-my-online-courses-certificates/)

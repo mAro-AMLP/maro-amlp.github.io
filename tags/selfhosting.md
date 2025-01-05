@@ -5,4 +5,4 @@ permalink: /tags/selfhosting/
 count: 1
 ---
 
-- [app de fotos en el servidor familiar](https://jartigag.blog/immich-fotos-vps-familiar)
+- [How I plan my smart home](https://blog.chraebsli.dev/opinions/how-i-plan-my-smart-home/)

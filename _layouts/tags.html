@@ -5,14 +5,42 @@ permalink: /tags/
 ---
 
 <div id="tags" class="d-flex flex-wrap mx-xl-2">
-  {% assign tags = site.data.posts | map: 'tags' | flatten | uniq | sort_natural %}
-
-  {% for tag in tags %}
-    <div>
-      <a class="tag" href="{{ tag | slugify | url_encode | prepend: '/tags/' | prepend: site.baseurl | append: '/' | relative_url }}">
-        {{ tag -}}
-        <span class="text-muted">{{ site.tags[tag].size }}</span>
-      </a>
-    </div>
-  {% endfor %}
+  <p>Loading tags...</p>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', async () => {
+    const tagsContainer = document.getElementById('tags');
+
+    async function loadTags() {
+      const tagsUrl = '{{ "_data/tags.json" | relative_url }}';
+      try {
+        const response = await fetch(tagsUrl);
+        if (!response.ok) throw new Error(`Failed to fetch tags.json: ${response.statusText}`);
+        return await response.json();
+      } catch (error) {
+        console.error("Error loading tags:", error);
+        return {};
+      }
+    }
+
+    const tags = await loadTags();
+    tagsContainer.innerHTML = '';
+
+    if (Object.keys(tags).length === 0) {
+      tagsContainer.innerHTML = '<p>No tags available.</p>';
+    } else {
+      Object.entries(tags)
+        .sort((a, b) => a[0].localeCompare(b[0])) // Sort alphabetically
+        .forEach(([tag, count]) => {
+          const tagElement = document.createElement('div');
+          tagElement.innerHTML = `
+            <a class="tag" href="/tags/${tag}/">
+              ${tag} <span class="text-muted">(${count})</span>
+            </a>
+          `;
+          tagsContainer.appendChild(tagElement);
+        });
+    }
+  });
+</script>

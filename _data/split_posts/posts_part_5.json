@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Crónica do IndieDevDay",
+    "link": "https://blog.nekerafa.dev/gl/posts/indie-dev-day/",
+    "pubDate": "Mon, 07 Oct 2024 16:09:39 +0000",
+    "excerpt": "Para recuperar un pouco a rutina, veñoche falar do que para mim foi o IndieDevDay, ademáis de deixarche unha pequena sorpresa.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Unknown Feed Title"
+  },
+  {
+    "title": "Amorodo Jam 2024",
+    "link": "https://blog.nekerafa.dev/posts/amorodo-jam/",
+    "pubDate": "Sun, 12 May 2024 17:01:31 +0000",
+    "excerpt": "Hoy empezó el Amorodo Jam 2024, una jam libre, abierta, reivindicativa, inclusiva y para todas las edades, sin premios, ni jurado, ni votaciones. La idea es crear un trabajo que represente un poco de nuestra casa de como es Galicia, ya sea con una canción, un poema, algún dibujo o mismo un videojuego.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Unknown Feed Title"
+  },
+  {
+    "title": "Amorodo Jam 2024",
+    "link": "https://blog.nekerafa.dev/gl/posts/amorodo-jam/",
+    "pubDate": "Sun, 12 May 2024 00:00:00 +0000",
+    "excerpt": "Hoxe comezou o Amorodo Jam 2024, unha jam libre, aberta, reinvindicativa, inclusiva e para todas as idades, sen premios, nen xurado, nen votacións. A idea é crear un traballo que represente un pouco do noso lar que é Galicia, sexa unha canción, un poema, algún debuxo ou mesmo un videoxogo.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Unknown Feed Title"
+  },
+  {
+    "title": "¿Qué es un lenguaje de programación? II",
+    "link": "https://blog.nekerafa.dev/posts/que-es-un-lenguaje-de-programacion_ii/",
+    "pubDate": "Sun, 24 Mar 2024 21:03:05 +0000",
+    "excerpt": "Continuaré con la definición de qué es un lenguaje de programación para poder responder si HTML y CSS son lenguajes de programación o no. Para ello hablaremos de las fases de generación de código y tipos de lenguajes.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Unknown Feed Title"
+  },
+  {
+    "title": "¿Qué es un lenguaje de programación? I",
+    "link": "https://blog.nekerafa.dev/posts/que-es-un-lenguaje-de-programacion_i/",
+    "pubDate": "Thu, 29 Feb 2024 21:07:58 +0000",
+    "excerpt": "En esta entrada intentaré definirlo de la forma más sencilla posible la pregunta de qué es un lenguaje de programación para poder responder si HTML y CSS son lenguajes de programación o no. Primero explicaré un poco de historia y luego me adentraré al mundo de los lenguajes formales.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Unknown Feed Title"
+  },
+  {
+    "title": "Lo que necesitas saber antes de usar Godot",
+    "link": "https://blog.nekerafa.dev/posts/lo-que-necesitas-saber-de-godot/",
+    "pubDate": "Tue, 30 Jan 2024 21:52:22 +0000",
+    "excerpt": "En esta entrada quería hablar de dos puntos clave a la hora de desarrollar en Godot, uno de los principales motores de código abierto: la programación orientación a objetos por clases, y la programación dirigida por eventos.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Unknown Feed Title"
+  },
+  {
+    "title": "Mi resumen de 2023",
+    "link": "https://blog.nekerafa.dev/posts/mi-resumen-2023/",
+    "pubDate": "Fri, 08 Dec 2023 21:46:10 +0000",
+    "excerpt": "Ya estamos enfilando a un nuevo año, y creo que no soy la única persona que se pone a pensar, con cierta mirada de nostalgia, todo lo que nos ha pasado en este último año. A priori puede pensar que solo ha sido otro año más y ya, pero fijo que si rascamos un poco, nos encontramos con muchas cosas buenas. Aunque sean pequeñitas. Es por eso que  quería aprovechar este mi espacio para hacer un resumen de todo en lo que estuve metido este año, que en mi caso no fue poco viéndolo en perspectiva.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Unknown Feed Title"
+  },
+  {
+    "title": "Mi aporte a la Indie Spain Jam 2023",
+    "link": "https://blog.nekerafa.dev/posts/indie-spain-jam-2023/",
+    "pubDate": "Sat, 14 Oct 2023 19:49:16 +0000",
+    "excerpt": "Se que iba a hablar antes de otros proyectos, pero el mes pasado estuve inmerso en la Indie Spain Jam 2023, por lo que quería hablar esta vez de mi última experiencia, además de lo que aprendí en este evento, sobre todo porque, aunque no quedó entre los 25 primeros, pude terminar otro proyecto del que se me ocurren muchas cosas para hacer.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Unknown Feed Title"
+  },
+  {
+    "title": "La importancia de la tecnología",
+    "link": "https://blog.nekerafa.dev/posts/la-importancia-de-la-tecnologia/",
+    "pubDate": "Sun, 17 Sep 2023 18:36:00 +0000",
+    "excerpt": "Llevo unos meses pensando qué publicar en mi blog para retomarlo de nuevo, ya que la última entrada es de hace más de un año. Al final, he decidido hablar sobre uno de los problemas que más pasa en este mundillo. No es la primera vez que nos encontramos con varios problemas a veces difíciles de resolver al estar ligados a la tecnología que hemos elegido.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Unknown Feed Title"
+  },
+  {
+    "title": "Word Segmentation in the Browser",
+    "link": "https://yongfu.name/2024/08/28/ws-in-browser/",
+    "pubDate": "Wed, 28 Aug 2024 00:00:00 +0000",
+    "excerpt": "I recently searched Google for “JavaScript Chinese Word Segmentation”, and the only reliable links are those related to Jieba. Jieba is an antique, and there are much better Chinese Word Segmentation (CWS) engines out there. However, these powerful—but bulky—neural network monsters become a heavy burden when faced with the reality of deployment and maintanance. Even if deployment and maintanance don’t cost much, dissemination still gets hindered and becomes impossible as projects accumulate. A tool that needs constant maintainance is probably useless unless one is very well-funded.",
+    "tags": [],
+    "author": "unknown-author",
+    "source": "Yongfu's Blog"
+  }
+]

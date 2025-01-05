@@ -175,6 +175,10 @@ collections:
     output: true
     sort_by: order
 
+search:
+  enabled: true
+  file: /_data/posts.json
+
 defaults:
   - scope:
       path: "" # An empty string here means all files in the project
@@ -219,6 +223,7 @@ exclude:
   - purgecss.js
   - rollup.config.js
   - "package*.json"
+  - assets/js/data/posts.json
 
 jekyll-archives:
   enabled: [categories, tags]
