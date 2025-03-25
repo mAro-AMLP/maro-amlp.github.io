@@ -1,37 +1,37 @@
-name: Aggregate Feed
-
-on:
-  schedule:
-    - cron: '0 0 * * *' # Run every day at midnight
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
-      - name: Install dependencies
-        run: bundle install
-
-      - name: Run feed aggregator script
-        run: ruby feed_aggregator.rb
-
-      - name: Commit changes
-        run: |
-          git config --global user.name 'Your GitHub Actions Bot'
-          git config --global user.email 'your-email@example.com'
-          git add _data/posts.yml
-          git commit -m 'Update aggregated feed'
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+#name: Aggregate Feed
+#
+#on:
+#  schedule:
+#    - cron: '0 0 * * *' # Run every day at midnight
+#
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v3
+#
+#      - name: Set up Ruby
+#        uses: ruby/setup-ruby@v1
+#        with:
+#          ruby-version: '3.2'
+#          bundler-cache: true
+#
+#      - name: Install dependencies
+#        run: bundle install
+#
+#      - name: Run feed aggregator script
+#        run: ruby feed_aggregator.rb
+#
+#      - name: Commit changes
+#        run: |
+#          git config --global user.name 'Your GitHub Actions Bot'
+#          git config --global user.email 'your-email@example.com'
+#          git add _data/posts.yml
+#          git commit -m 'Update aggregated feed'
+#
+#      - name: Push changes
+#        uses: ad-m/github-push-action@master
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          branch: main
